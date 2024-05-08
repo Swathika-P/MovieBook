@@ -39,7 +39,7 @@ const Login = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <Box style={{backgroundImage: 'linear-gradient(to left bottom, #fc0839, #fc0742, #fb094a, #fa0e52, #f8145a)'}}
+        <Box style={{backgroundImage: 'linear-gradient(to left bottom, #5c10f2, #6c0fd6, #7214bc, #731ca4, #70238d)'}}
           maxWidth={400}
           display="flex"
           flexDirection={"column"}
@@ -62,7 +62,7 @@ const Login = () => {
           </Typography>
 
           <TextField
-            placeholder="email"
+            placeholder="Email"
             value={inputs.email}
             name="email"
             margin="normal"
@@ -72,7 +72,7 @@ const Login = () => {
             sx={{ input: { backgroundColor: 'white',borderRadius:'15px' } }} 
           />
           <TextField
-            placeholder="password"
+            placeholder="Password"
             value={inputs.password}
             name="password"
             margin="normal"
@@ -82,11 +82,18 @@ const Login = () => {
             sx={{ input: { backgroundColor: 'white',borderRadius:'15px' } }} 
           />
 
-          <Button
+        <Button
             type="submit"
-            sx={{ borderRadius: 3, marginTop: 3 }}
+            sx={{
+              borderRadius: 3,
+              marginTop: 3,
+              backgroundColor: '#1976D2', 
+              color: 'white', 
+              '&:hover': {
+                backgroundColor: '#1565C0', 
+              },
+            }}
             variant="contained"
-            color="primary"
           >
             Submit
           </Button>
