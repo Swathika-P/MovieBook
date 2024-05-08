@@ -40,8 +40,8 @@ const Register = () => {
         <Box
           sx={{
             backgroundImage:
-              'linear-gradient(to left bottom, #fc0839, #fc0742, #fb094a, #fa0e52, #f8145a)',
-            color: "violet",
+              'linear-gradient(to left bottom, #5c10f2, #6c0fd6, #7214bc, #731ca4, #70238d)',
+            color: "white",
             maxWidth: 400,
             display: "flex",
             flexDirection: "column",
@@ -93,9 +93,16 @@ const Register = () => {
 
           <Button
             type="submit"
-            sx={{ borderRadius: 3, marginTop: 3 }}
+            sx={{
+              borderRadius: 3,
+              marginTop: 3,
+              backgroundColor: '#1976D2', 
+              color: 'white', 
+              '&:hover': {
+                backgroundColor: '#1565C0', 
+              },
+            }}
             variant="contained"
-            color="primary"
           >
             Submit
           </Button>
@@ -103,9 +110,15 @@ const Register = () => {
             component="button"
             variant="body2"
             onClick={() => navigate("/login")}
-            sx={{ marginTop: 3, cursor: "pointer" }}
+            sx={{
+              marginTop: 3,
+              cursor: "pointer",
+              fontFamily: 'Poppins',
+              color: 'white',
+              textDecoration: 'none',
+            }}
           >
-            Already Registered? Please Login
+            ALREADY REGISTERED? PLEASE LOGIN
           </Link>
         </Box>
       </form>
