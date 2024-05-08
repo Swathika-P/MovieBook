@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@500&family=DM+Serif+Display&family=Domine:wght@600&family=Merriweather:ital,wght@1,700&family=Open+Sans:ital,wght@1,800&family=Oswald:wght@300&family=Poppins&family=Roboto+Slab:wght@200&family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  /* font-family: 'Roboto Slab', serif; */
+  font-family:"Poppins", sans-serif;
+  
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+}
+
+code {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  color: white;
+  position: relative; 
+  background-image: linear-gradient(to right top, #5c10f2, #6c0fd6, #7214bc, #731ca4, #70238d);
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  width: 75%;
+}
+
+.home,
+.skill,
+.contact,
+.about {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .logo {
+      position: absolute;
+      left: 10%;
+  }
+
+  .nav-links {
+      display: none;
+  }
+
+  .nav-links-mobile {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-image: linear-gradient(to right top,#5c10f2, #6c0fd6, #7214bc, #731ca4, #70238d);
+      list-style: none;
+      text-align: center;
+      transition: all 1.5s ease-out;
+      z-index: 1;
+  }
+  .home,
+  .skill,
+  .about,
+  .contact {
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      display: block;
+  }
+  .home:hover,
+  .skill:hover,
+  .contact:hover,
+  .about:hover {
+  color: #fff;
+  font-size: 25px; 
+}
+
+  .mobile-menu-icon {
+      display: block;
+      position: absolute;
+      font-size: 30px;
+      color: white;
+      background: transparent;
+      border: none;
+      outline: none;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+  }
+}
+
+.card-content{
+  background-image: linear-gradient(to right top, #14080d, #12080b, #100709, #0d0708, #0a0707);
+}
+
+.table-class{
+  background-image: linear-gradient(to right top, #93c0d3, #8eb8db, #95aedf, #a7a1dd, #bf92d0);
+  border-radius: 5px;
+}
+
+.white-color{
+  color:white
+}
